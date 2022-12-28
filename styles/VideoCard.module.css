@@ -1,0 +1,32 @@
+.video {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.userDetails {
+    background-color: white;
+    padding: 1rem;
+}
+
+.activeCIrcle {
+    height: 10px;
+    width: 10px;
+    background-color: #1860ED;
+    border-radius: 100%;
+}
+
+.userName {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.userDetails p,
+.socialLink {
+    font-size: 1.2rem;
+}
+
+.extraDetails {
+    margin-top: 1rem;
+}

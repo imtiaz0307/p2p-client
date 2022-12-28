@@ -1,0 +1,22 @@
+.chatBox {
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: calc(100vh - 70px);
+}
+
+.chatBox .messages {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 0;
+    overflow-y: scroll;
+}
+
+.chatBox input {
+    padding: .5rem 1rem;
+}
