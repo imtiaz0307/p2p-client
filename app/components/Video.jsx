@@ -17,7 +17,7 @@ const VideoPage = ({ videoData }) => {
         <div className={styles.mainContainer}>
             <div className={styles.left}>
                 <div className={styles.videoCards}>
-                    <VideoCard data={videoData} />
+                    <VideoCard data={videoData} src={'src'} />
                     <VideoCard data={videoData} />
                 </div>
                 <div className={styles.buttons}>

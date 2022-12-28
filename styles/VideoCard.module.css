@@ -8,7 +8,12 @@
     width: 100%;
     object-fit: cover;
     background-color: black;
+    color: white;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .userDetails {

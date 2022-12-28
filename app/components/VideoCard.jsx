@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import styles from '../../styles/VideoCard.module.css'
 
-const VideoCard = ({ data }) => {
+const VideoCard = ({ data, src }) => {
     const videoElement = useRef()
 
     if (navigator.mediaDevices.getUserMedia) {
@@ -15,7 +15,13 @@ const VideoCard = ({ data }) => {
     }
     return (
         <div className={styles.videoCard}>
-            <video autoPlay={true} ref={videoElement} className={styles.video}></video>
+            {
+                src
+                    ?
+                    <video autoPlay={true} ref={videoElement} className={styles.video}></video>
+                    :
+                    <div className={styles.video}>Loading...</div>
+            }
             <div className={styles.userDetails}>
                 <h2 className={styles.userName}>{data.video}
                     {
