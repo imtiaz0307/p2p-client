@@ -21,4 +21,5 @@
 .btn {
     all: unset;
     color: black;
+    cursor: pointer;
 }
