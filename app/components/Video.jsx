@@ -1,27 +1,10 @@
 "use client"
-import ChatBox from '../components/ChatBox'
+import ChatBox from './ChatBox'
 import styles from '../../styles/Video.module.css'
-import VideoCard from '../components/VideoCard'
+import VideoCard from './VideoCard'
 import { useRef } from 'react'
 
-
-const userOneData = {
-    name: 'Imtiaz',
-    country: 'xyz',
-    linkedin: 'imtiaz0307',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere molestiae fugit atque veritatis asperiores delectus doloribus pariatur laborum repudiandae.',
-    isVerified: false
-}
-
-const userTwoData = {
-    name: 'Krishna',
-    country: 'xyz',
-    linkedin: 'krishna123',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere molestiae fugit atque veritatis asperiores delectus doloribus pariatur laborum repudiandae.',
-    isVerified: true
-}
-
-const VideoPage = () => {
+const VideoPage = ({ videoData }) => {
     const enterButton = useRef()
     const escapeButton = useRef()
 
@@ -34,8 +17,8 @@ const VideoPage = () => {
         <div className={styles.mainContainer}>
             <div className={styles.left}>
                 <div className={styles.videoCards}>
-                    <VideoCard data={userOneData} />
-                    <VideoCard data={userTwoData} />
+                    <VideoCard data={videoData} />
+                    <VideoCard data={videoData} />
                 </div>
                 <div className={styles.buttons}>
                     <button className={styles.btn} ref={enterButton} onClick={() => console.log('Enter Clicked')}>esc/next</button>

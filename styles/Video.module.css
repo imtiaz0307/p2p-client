@@ -23,6 +23,7 @@
     min-height: 70px;
     background-color: white;
     align-items: center;
+    padding-bottom: .5rem;
 }
 
 .btn {

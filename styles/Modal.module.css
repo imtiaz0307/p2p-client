@@ -28,12 +28,22 @@
     font-weight: 500;
 }
 
-.modal p {
+.closeModal {
     position: absolute;
     right: 10px;
-    color: black;
     top: 10px;
     cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    transform: translateY(3px) rotate(45deg);
+}
+
+.line:nth-child(2) {
+    transform: rotate(-45deg);
 }
 
 .loginButton {
